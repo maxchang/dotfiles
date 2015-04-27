@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/private/tmp/networkx/examples/javascript/force'
+let g:netrw_dirhist_2='/private/tmp/taint.SE.working/sailfish_result'
+let g:netrw_dirhist_3='/Users/mchang/Desktop/NGS methods/Splicing/annotation'
+let g:netrw_dirhist_4='/Users/mchang/.ssh'
+let g:netrw_dirhist_5='/Users/mchang/.config/fish/generated_completions'
+let g:netrw_dirhist_6='/Users/mchang/.vim/bundle'
+let g:netrw_dirhist_7='/Users/mchang/Desktop/J147/clustering'
+let g:netrw_dirhist_8='/Users/mchang/.vim/syntax'
