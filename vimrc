@@ -3,6 +3,9 @@ filetype off
 "call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
+" avoids problems when using Fish shell
+set shell=/bin/sh
+
 set guifont=Menlo:h12
 
 set tabstop=4
