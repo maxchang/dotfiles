@@ -1,5 +1,6 @@
 alias vi=vim
-set -x NFS_BIN /sanger/nfs_data/mchang/bin
-set -x PATH $HOME/bin $NFS_BIN /sanger/nfs_data/mchang/anaconda/bin $NFS_BIN/trinity $NFS_BIN/blast $NFS_BIN/tophat $NFS_BIN/bedtools $NFS_BIN/bedops /sanger/nfs_data/chris/genomics/homer/bin /sanger/nfs_data/chris/genomics/homer/scripts $PATH /sanger/nfs_data/mchang/tools/ngsplot/bin
-set -x BLASTDB /sanger/nfs_data/mchang/blast
-set -x NGSPLOT /sanger/nfs_data/mchang/tools/ngsplot
+set -x PATH /home/mwchang/gpfs/bin /home/mwchang/gpfs/anaconda2/bin $PATH /gpfs/data01/cbenner/software/homer/bin /gpfs/data01/cbenner/software/homer/scripts /gpfs/data01/mchang/bin/ngsplot/bin
+set -x NGSPLOT /gpfs/data01/mchang/bin/ngsplot
+
+source (conda info --root)/etc/fish/conf.d/conda.fish
+set -gx CONDA_LEFT_PROMPT 1
