@@ -20,7 +20,6 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
-set cursorline
 set ttyfast
 set ruler
 set ignorecase
