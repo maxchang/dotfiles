@@ -6,8 +6,8 @@
 
 ########## Variables
 
-dir=~/dev/dotfiles          # dotfiles directory
-files="screenrc vimrc vim gvimrc"    # list of files/folders to symlink in homedir
+dir=$HOME/dotfiles          # dotfiles directory
+files="screenrc tmux.conf vimrc vim gvimrc"    # list of files/folders to symlink in homedir
 
 ##########
 
