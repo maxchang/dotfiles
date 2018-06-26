@@ -1,6 +1,6 @@
 filetype on
 filetype off
-"call pathogen#runtime_append_all_bundles()
+call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
 " avoids problems when using Fish shell
@@ -39,7 +39,7 @@ nnoremap <leader>w :set linebreak!<cr>
 nnoremap <leader>n :set number!<cr>
 
 "show/hide yankring
-nnoremap <silent> <leader>y :YRShow<cr> 
+nnoremap <silent> <leader>y :YRShow<cr>
 inoremap <silent> <leader>y :YRShow<cr>
 
 "use tab to jump to matched parentheses
@@ -61,3 +61,9 @@ nnoremap <leader>i :set list!<cr>
 
 "save and (r)un python script
 nnoremap <silent> <leader>r :w<CR>:exe ":!python " . getreg("%") . "" <CR>
+
+"powerline stuff (https://github.com/vim-airline/vim-airline)
+set t_Co=256
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_theme='bubblegum'
