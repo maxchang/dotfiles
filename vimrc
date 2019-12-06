@@ -1,12 +1,23 @@
-filetype on
-filetype off
-call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
-
 " avoids problems when using Fish shell
 set shell=/bin/sh
 
-set guifont=Menlo:h12
+" install vim-plug if necessary
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" load plugins
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdcommenter'
+Plug 'airblade/vim-gitgutter'
+Plug 'chriskempson/base16-vim'
+Plug 'baskerville/bubblegum'
+Plug 'scrooloose/nerdtree'
+call plug#end()
 
 set tabstop=4
 set shiftwidth=4
@@ -46,8 +57,10 @@ inoremap <silent> <leader>y :YRShow<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
-let g:yankring_history_dir = '$HOME/.vim'
+"toggle file browser
+map <C-n> :NERDTreeToggle<CR>
 
+"let g:yankring_history_dir = '$HOME/.vim'
 "setup undo file(s)
 "set undodir=~/.vim/undo
 "set undofile
@@ -67,3 +80,9 @@ set t_Co=256
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='bubblegum'
+
+"let base16colorspace=256
+"colorscheme bubblegum-256-dark
+colorscheme bubblegum-256-light
+"colorscheme base16-default-dark
+"colorscheme base16-cupertino
