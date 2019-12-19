@@ -17,6 +17,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
 Plug 'baskerville/bubblegum'
 Plug 'scrooloose/nerdtree'
+Plug 'mechatroner/rainbow_csv'
 call plug#end()
 
 set tabstop=4
