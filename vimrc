@@ -47,6 +47,9 @@ nnoremap <leader><space> :noh<cr>
 "toggle word wrap
 nnoremap <leader>w :set linebreak!<cr>
 
+"fold all lines, default of 60 characters
+nnoremap <leader>f :%!fold -w 60
+
 "toggle line numbers
 nnoremap <leader>n :set number!<cr>
 
