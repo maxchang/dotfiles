@@ -50,6 +50,15 @@ nnoremap <leader>w :set linebreak!<cr>
 "fold all lines, default of 60 characters
 nnoremap <leader>f :%!fold -w 60
 
+"duplicate all lines
+nnoremap <leader>d :g/^/t.<cr>:noh<cr>
+
+"substitute on odd lines
+nnoremap <leader>s1 :g/^/if line('.')%2\|s/$/_R1.fastq.gz/\|endif
+
+"substitute on even lines
+nnoremap <leader>s2 :g/^/if !(line('.')%2)\|s/$/_R2.fastq.gz/\|endif
+
 "toggle line numbers
 nnoremap <leader>n :set number!<cr>
 
