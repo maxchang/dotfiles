@@ -98,7 +98,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='bubblegum'
 
 "let base16colorspace=256
-"colorscheme bubblegum-256-dark
+colorscheme bubblegum-256-dark
 "colorscheme bubblegum-256-light
-colorscheme base16-default-dark
+"colorscheme base16-default-dark
 "colorscheme base16-cupertino
