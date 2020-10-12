@@ -50,6 +50,9 @@ nnoremap <leader>w :set linebreak!<cr>
 "fold all lines, default of 60 characters
 nnoremap <leader>f :%!fold -w 60
 
+"toggle paste mode
+nmap <leader>p :setlocal paste! paste?<cr>
+
 "duplicate all lines
 nnoremap <leader>d :g/^/t.<cr>:noh<cr>
 
