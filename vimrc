@@ -18,6 +18,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'baskerville/bubblegum'
 Plug 'scrooloose/nerdtree'
 Plug 'mechatroner/rainbow_csv'
+Plug 'bioSyntax/bioSyntax-vim'
 call plug#end()
 
 set tabstop=4
@@ -38,6 +39,7 @@ set ignorecase
 set smartcase
 set incsearch
 set gdefault
+set guioptions+=k
 syn on
 set hlsearch
 
