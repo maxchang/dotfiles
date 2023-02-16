@@ -28,6 +28,7 @@ set ffs=unix,dos,mac
 
 set scrolloff=3
 set autoindent
+set copyindent
 set showmode
 set showcmd
 set hidden
